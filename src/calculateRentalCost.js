@@ -8,6 +8,7 @@ function calculateRentalCost(days) {
    if (days === 7) {
     return 230;
   }
+  
 
   if (days === 6) {
     return 220;
