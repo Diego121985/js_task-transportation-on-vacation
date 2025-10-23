@@ -1,19 +1,18 @@
 /**
  * @param {number} days
- *
  * @return {number}
  */
 function calculateRentalCost(days) {
-  const DailyRate = 40;
-  const DiscountDays3 = 20;
-  const DiscountDays7 = 50;
+  const DAILY_RATE = 40;
+  const DISCOUNT_3_DAYS = 20;
+  const DISCOUNT_7_DAYS = 50;
 
-  let total = days * DailyRate;
+  let total = days * DAILY_RATE;
 
   if (days >= 7) {
-    total -= DiscountDays7;
+    total -= DISCOUNT_7_DAYS;
   } else if (days >= 3) {
-    total -= DiscountDays3;
+    total -= DISCOUNT_3_DAYS;
   }
 
   return total;
